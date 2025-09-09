@@ -5,16 +5,16 @@ user_score = 0
 computer_score = 0
 
 while True:
-  user = input('Choose Rock, Paper, Scissors or type quit to stop :  ').lower()
+  user = input('Choose rock, paper, scissors or type quit to stop: ').lower()
 
   if user == 'quit':
     break
   if user not in choices:
-    print('Invalid choice. Please choose Rock, Paper, or Scissors.')
+    print('Invalid Choice! Please try Again!')
     continue
 
-  computer = random.choice(choices)
-  print(f'You chose {user}, computer chose {computer}') # Added for clarity
+  computer = random.choice(choices) 
+  print(f'You chose {user} and computer chose {computer}') 
   if user == computer:
     print('Its a tie')
   elif (user == 'rock' and computer == 'scissors') or \
